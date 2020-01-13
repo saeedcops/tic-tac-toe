@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLay"
+        android:layout_width="match_parent"
+        android:layout_height="300pt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/t1"
+        app:columnCount="3"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="11pt"
+            android:layout_marginTop="28pt"
+            android:onClick="dropIn"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="11pt"
+            android:layout_marginTop="38pt"
+            android:onClick="dropIn"
+            android:tag="1"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="11pt"
+            android:layout_marginTop="27pt"
+            android:onClick="dropIn"
+            android:tag="2"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="16pt"
+            android:layout_marginTop="28pt"
+            android:onClick="dropIn"
+            android:tag="3"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="22pt"
+            android:layout_marginTop="38pt"
+            android:onClick="dropIn"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="17pt"
+            android:layout_marginTop="27pt"
+            android:onClick="dropIn"
+            android:tag="5"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="24pt"
+            android:layout_marginTop="28pt"
+            android:onClick="dropIn"
+            android:tag="6"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="24pt"
+            android:layout_marginTop="38pt"
+            android:onClick="dropIn"
+            android:tag="7"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40pt"
+            android:layout_height="105dp"
+            android:layout_marginLeft="24pt"
+            android:layout_marginTop="27pt"
+            android:onClick="dropIn"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:padding="25pt"
+        android:visibility="invisible"
+        app:layout_gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:id="@+id/winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="TextView"
+            android:textSize="12pt" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="playAgain"
+            android:paddingLeft="20pt"
+            android:text="play again"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</RelativeLayout>
